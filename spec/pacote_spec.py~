@@ -23,10 +23,23 @@ class Pacote_spec(unittest.TestCase):
 
     def it_inserir_pessoa_pacote(self):
         pessoas = Pessoa('001','Diogo','3','998845108','diogo.azvg@gmail.com')
-            
+        #pacote = Pacote('001', '022', '003', '004')
+        
+        #pacote = Pacote('001', pessoa)
+       
+        #pacote.it_inserir_pessoa_pacote(pessoa)
+        #(pessoa in pacote.pessoas) |should| equal_to(True)
+    
+    
     def it_verificar_pessoa_pacote(self):
         pessoas = Pessoa('001','Diogo','3','998845108','diogo.azvg@gmail.com')
+        #pacote = Pacote('001', '022', '003', '004')
         
+       # codPessoa = Pessoa('001' ,'001', pessoa, pacote)
+        
+        #pacote.inserirCodPessoa(Pessoa)
+        #pacote.verificaCodPessoas(Pessoa) |should| equal_to(True)
+
 
     def it_inserir_transporte_pacote(self):
         transp = Transporte('001','1001','www.1001.com.br','27338980','Rio','Bahia','R$ 3000')
