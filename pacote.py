@@ -11,3 +11,12 @@ class Pacote:
     def verificaCodPessoas(self,pessoas):
         return codPessoa in self.pessoa
 
+    def inserirCodTransporte(self,transp):
+        self.codTransporte.append(transp)
+    def verificaCodTransporte(self,transp):
+        return codTransporte in self.transporte
+
+    def inserirCodHotel(self,transp):
+        self.codTransporte.append(transp)
+    def verificaCodPessoas(self,transp):
+        return codPessoa in self.transporte
