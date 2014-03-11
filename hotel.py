@@ -7,3 +7,7 @@ class Hotel:
         self.diaria = diaria
         self.diaHospedado = diaHospedado
         
+    def update(self, hotel, site, telefone):
+    	self.hotel = hotel
+    	self.site = site
+    	self.telefone = telefone
