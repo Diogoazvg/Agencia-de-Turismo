@@ -12,4 +12,10 @@ class Refeicao_spec(unittest.TestCase):
         refeicao.telefone |should| equal_to ('1127378977')
         refeicao.quantRefeicao |should| equal_to ('5')
         refeicao.precoKg |should| equal_to ('R$ 67')
-
+    
+    def it_update(self):
+    	refeicao = Refeicao ('001','Le coco','www.lecoco.com.br','1127378977','5','R$ 67')
+    	refeicao.update('Giraffas', 'www.giraffas.com.br', 'R$ 45')
+    	refeicao.refeicao |should| equal_to('Giraffas')
+    	refeicao.site |should| equal_to('www.giraffas.com.br')
+    	refeicao.precoKg |should| equal_to('R$ 45')
