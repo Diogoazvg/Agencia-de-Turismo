@@ -6,3 +6,8 @@ class Refeicao:
         self.telefone = telefone
         self.quantRefeicao = quantRefeicao
         self.precoKg = precoKg
+    
+    def update(self, refeicao, site, precoKg):
+    	self.refeicao = refeicao
+    	self.site = site
+    	self.precoKg = precoKg 
