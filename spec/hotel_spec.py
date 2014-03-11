@@ -13,3 +13,9 @@ class Hotel_spec(unittest.TestCase):
         hotel.diaria |should| equal_to ('R$ 300')
         hotel.diaHospedado |should| equal_to ('3')
 
+    def it_update(self):
+    	hotel = Hotel ('001','Softel Jequitimar','www.sbt.com.br','1127338977','R$ 300','3')
+    	hotel.update('Comfort Hotel', 'www.comfort.com.br', '99999999')
+    	hotel.hotel |should| equal_to('Comfort Hotel')
+    	hotel.site |should| equal_to('www.comfort.com.br')
+    	hotel.telefone |should| equal_to('9999999')
