@@ -7,4 +7,8 @@ class Transporte:
         self.origem = origem
         self.destino = destino
         self.precoViagem = precoViagem
-
+    
+    def update(self, cia, site, precoViagem):
+    	self.cia = cia
+    	self.site = site
+    	self.precoViagem = precoViagem 
