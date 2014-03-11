@@ -6,4 +6,7 @@ class Pessoa:
         self.telefone = telefone
         self.email = email
     
+    def update(self, quantDependente, telefone):
+    	self.quantDependente = quantDependente
+    	self.telefone = telefone
 
