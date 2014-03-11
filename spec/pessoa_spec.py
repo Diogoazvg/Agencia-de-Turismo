@@ -11,4 +11,10 @@ class Pessoa_spec(unittest.TestCase):
         pessoa.quantDependente |should| equal_to ('3')
         pessoa.telefone |should| equal_to ('998845108')
         pessoa.email |should| equal_to ('diogo.azvg@gmail.com')
-
+    
+    def it_update(self):
+    	pessoa = Pessoa ('001','Diogo','3','998845108','diogo.azvg@gmail.com')
+    	pessoa.update('2', '98845105')
+    	pessoa.quantDependente |should| equal_to('2')
+    	pessoa.telefone |should| equal_to('98845105')
+    	
